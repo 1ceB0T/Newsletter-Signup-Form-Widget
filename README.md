@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [[Add live site URL here](https://1ceb0t.github.io/Newsletter-Signup-Form-Widget/)]([https://your-live-site-url.com](https://1ceb0t.github.io/Newsletter-Signup-Form-Widget/))
 
 ### Built with
 
