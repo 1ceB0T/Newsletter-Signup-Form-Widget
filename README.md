@@ -4,16 +4,11 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ## Table of contents
 
-- [Overview](#overview)
 - [The challenge](#the-challenge)
 - [Screenshot](#screenshot)
 - [links](#links)
 - [Built with](#built-with)
 - [Author](#author)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
-## Overview
 
 ### The challenge
 
@@ -44,8 +39,6 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - SASS, SCSS
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ## Author
 
