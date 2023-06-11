@@ -46,7 +46,7 @@
         // // newsletter element of list
         &-item {
             @include description;
-            background-image: url(/assets/images/icon-list.svg);
+            background-image: url(../assets/images/icon-list.svg);
             background-repeat: no-repeat;
             background-position: top left;
             padding-left: 2.3rem;
