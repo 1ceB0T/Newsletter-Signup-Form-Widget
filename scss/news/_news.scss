@@ -1,0 +1,138 @@
+// The newsletter form
+.news {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+
+    // The image in the top
+    &__img {
+        border-radius: 0 0 1rem 1rem;
+        height: 284px;
+        object-fit: cover;
+
+        // hiding the image for desktop
+        &:nth-child(2) {
+            display: none;
+        }
+    }
+
+    // The information and list
+    &__info {
+        display: flex;
+        flex-direction: column;
+        margin: 2.5rem 1.5rem;
+
+        // newsletter title
+        &-title {
+            @include title;
+            margin-bottom: 1.5rem;
+        }
+
+        // newsletter description
+        &-desc {
+            @include description;
+            margin-bottom: 1.5rem;
+        }
+
+        // // newsletter list
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.625rem;
+            margin-bottom: 2.5rem;
+        }
+
+        // // newsletter element of list
+        &-item {
+            @include description;
+            background-image: url(/assets/images/icon-list.svg);
+            background-repeat: no-repeat;
+            background-position: top left;
+            padding-left: 2.3rem;
+        }
+
+    }
+
+    // Newsletter form container
+    &__form {
+        position: relative;
+
+        // Text in form
+        &-text {
+            @include description;
+            font-size: 0.75rem;
+            line-height: 1.125rem;
+            margin-bottom: .5rem;
+        }
+
+        // Input in form
+        &-input {
+            @include description;
+            @include input;
+            margin-bottom: 1.5rem;
+        }
+
+        // Btn in Form
+        &-btn {
+            @include button;
+            font-size: 0.938rem;
+        }
+
+        // Error Input
+        &.error input {
+            border: 1px solid #FF6155;
+            color: #FF6155;
+            background: rgba(255, 97, 85, 0.15);
+        }
+
+        // Error text "Valid email required"
+        & small {
+            color: #FF6155;
+            font-weight: 700;
+            font-size: 12px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            visibility: hidden;
+        }
+
+        // Error text active
+        &.error small {
+            visibility: visible;
+        }
+    }
+}
+
+.succes {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: $white;
+    padding: 9.313rem 1.5rem 2.5rem;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+
+        &-img {
+            margin-bottom: 2.5rem;
+        }
+
+        &-title {
+            @include title;
+            margin-bottom: 24px;
+        }
+
+        &-descr {
+            @include description;
+        }
+    }
+
+    &__button {
+        @include button;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main-dist.css">
+  <title>Frontend Newsletter</title>
+</head>
+
+<body>
+  <!-- Sign-up form start -->
+  <div class="news" id="news"> <img class="news__img" src="./assets/images/illustration-sign-up-mobile.svg" alt="1">
+    <img class="news__img" src="./assets/images/illustration-sign-up-desktop.svg" alt="2">
+    <div class="news__info">
+      <h1 class="news__info-title">
+        Stay updated!
+      </h1>
+      <p class="news__info-desc"> Join 60,000+ product managers receiving monthly updates on: </p>
+      <ul class="news__info-list">
+        <li class="news__info-item">Product discovery and building what matters</li>
+        <li class="news__info-item">Measuring to ensure updates are a success</li>
+        <li class="news__info-item">And much more!</li>
+      </ul>
+      <form class="news__form" id="form"> <span class="news__form-text">
+          Email address
+        </span>
+        <input class="news__form-input" type="text" id="email" placeholder="email@company.com">
+        <button class="news__form-btn">Subscribe to monthly newsletter</button> <small>Error Message</small>
+      </form>
+    </div>
+  </div>
+  <!-- Sign-up form end -->
+  <!-- Success message start -->
+  <div class="succes" id="succes">
+    <div class="succes__info"> <img class="succes__info-img" src="/assets/images/icon-success.svg" alt="succes">
+      <h1 class="succes__info-title">Thanks for subscribing!</h1>
+      <p class="succes__info-descr"> A confirmation email has been sent to <a
+          href="mailto:ash@loremcompany.com">ash@loremcompany.com</a>. Please open it and click the button inside to
+        confirm your subscription. </p>
+    </div>
+    <button type="button" class="succes__button"> Dismiss message </button>
+  </div>
+  <!-- Success message end -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+// @mixin button {
+//     width: 100%;
+//     height: 3.5rem;
+//     background-color: $CharcoalGreyColor;
+//     border-radius: .5rem;
+//     border: none;
+//     font-size: 1rem;
+//     color: $white;
+//     font-weight: bold;
+// }
+
+@mixin button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 56px;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    border: none;
+    border-radius: .5rem;
+    background-color: $darkNavy;
+    color: $white;
+    transition: all .3s ease-in-out;
+
+
+    &:active,
+    &:focus-visible {
+        background: linear-gradient(204.47deg, #FF6A3A 0%, #FF527B 100%);
+
+        box-shadow: 0px 16px 32px rgba(255, 97, 85, 0.5);
+    }
+}
+
+@mixin input {
+    width: 100%;
+    height: 3.5rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid rgba(25, 24, 43, 0.25);
+    border-radius: .5rem;
+    opacity: 0.5;
+    transition: all .3s ease-in-out;
+
+    &:active,
+    &:focus-visible {
+        opacity: 1;
+        border: 1px solid #242742;
+    }
+}
+
+@mixin description {
+    color: $darkNavy;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    a {
+        color: $darkNavy;
+        font-weight: 700;
+    }
+}
+
+@mixin title {
+    font-size: 40px;
+    line-height: 40px;
+    color: $darkNavy;
+}
